@@ -11,7 +11,7 @@ namespace HelloWorldCore.Pages
     {
         public void OnGet()
         {
-
+            // Test code here
         }
     }
 }
