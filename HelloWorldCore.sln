@@ -7,6 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldCore", "HelloWorl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldCore.UnitTests", "HelloWorldCore.UnitTests\HelloWorldCore.UnitTests.csproj", "{48756F79-CB4D-4263-8C17-5179B54C62C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldCore.PerformanceTests", "HelloWorldCore.PerformanceTests\HelloWorldCore.PerformanceTests.csproj", "{8B11C19C-3A17-48D7-9C00-ED955BFF5492}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{78A10AE4-277E-42BE-AFD6-40248C36D588}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1FD18634-6974-4016-97AC-5114049359B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +30,17 @@ Global
 		{48756F79-CB4D-4263-8C17-5179B54C62C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48756F79-CB4D-4263-8C17-5179B54C62C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48756F79-CB4D-4263-8C17-5179B54C62C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B11C19C-3A17-48D7-9C00-ED955BFF5492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B11C19C-3A17-48D7-9C00-ED955BFF5492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B11C19C-3A17-48D7-9C00-ED955BFF5492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B11C19C-3A17-48D7-9C00-ED955BFF5492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48756F79-CB4D-4263-8C17-5179B54C62C6} = {1FD18634-6974-4016-97AC-5114049359B8}
+		{8B11C19C-3A17-48D7-9C00-ED955BFF5492} = {1FD18634-6974-4016-97AC-5114049359B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C11971CF-3361-4E92-8C1F-AC8D2BAEC397}
