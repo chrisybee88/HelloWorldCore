@@ -4,5 +4,8 @@ Execute the SonarQube Scanner for MSBuild from your computer
 execute the following commands at the root of your solution.
 
 SonarQube.Scanner.MSBuild.exe begin /k:"HelloWorldCore" /d:sonar.host.url="http://localhost:9000" /d:sonar.login="ebf22f28dc3de9d3f9efb4b43db9b7f40fbcefa9"
-MsBuild.exe /t:Rebuild
+
+dotnet restore
+dotnet publish -c Release -o output
+
 SonarQube.Scanner.MSBuild.exe end /d:sonar.login="ebf22f28dc3de9d3f9efb4b43db9b7f40fbcefa9"
